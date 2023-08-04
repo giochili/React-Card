@@ -1,0 +1,139 @@
+:root {
+    --bg-color: rgba(13, 25, 44, 1);
+    --white: #ffffff;
+    --hover-col: #00fff8;
+    --para-col: #8bacd9;
+    --border-col: #2e405a;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-color);
+}
+.html-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.App-container {
+    max-width: 350px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: var(--very-dark-blue-card-bg, #15263f);
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.eqvilibium {
+    display: block;
+    z-index: 5;
+    width: 302px;
+    position: inherit;
+    border-radius: 8px;
+}
+.view {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Card-container {
+    border-radius: 10px;
+    position: relative;
+    background: var(--hover-col);
+}
+.eqvilibium:hover {
+    z-index: 1;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.cardName {
+    font-family: "Outfit", sans-serif;
+    color: var(--white);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 24px;
+}
+.cardName:hover {
+    color: var(--hover-col);
+    cursor: pointer;
+}
+.cardParagraph {
+    margin-top: 16px;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    color: var(--para-col);
+}
+.price-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-col);
+}
+.price-container {
+    display: flex;
+    align-items: center;
+}
+.price-para {
+    color: var(--hover-col);
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 7px;
+}
+.time-container {
+    display: flex;
+    align-items: center;
+}
+.time-para {
+    color: var(--para-col);
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 7px;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.avatar {
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin-right: 16px;
+}
+.profileTXT {
+    color: var(--para-col);
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+.strong {
+    margin-left: 4px;
+    color: var(--white);
+    font-weight: 400;
+    cursor: pointer;
+}
+.strong:hover {
+    color: var(--hover-col);
+}
